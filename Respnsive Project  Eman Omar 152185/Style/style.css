@@ -1,0 +1,164 @@
+/* FrameWork */
+/* FrameWork */
+.text-center {
+    text-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+
+.visible-xs, .visible-sm, .visible-md, .visible-lg, .visible-xl{
+    display: none;
+}
+
+.hidden-xs, .hidden-sm, .hidden-md, .hidden-lg, .hidden-xl{
+    display: block;
+}
+
+.header {
+    background: url(../Images/pexels-bri-schneiter-346529.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 500px;
+    position: relative;
+}
+
+.navbar .logo{
+    width: 50px;
+    
+}
+.menu{
+    float: right;
+    font-size: 40px;
+    color: azure;
+}
+
+.navbar ul{
+    float: right;
+
+}
+
+.navbar ul li {
+    float: left;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    color: aliceblue;
+    margin: 10px;
+
+}
+
+.home h1{
+    margin-top: 80px;
+    font-size: 60px;
+    color: antiquewhite;
+}
+
+.home h1 span{
+    color: rosybrown;
+}
+
+
+.header .overly {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #04041ed1;
+}
+
+.header .overly h1 {
+    font-size: 60px;
+    margin-top: 100px;
+    color: beige;
+}
+
+.header .overly .plan1 {
+    font-size: 24px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    float: left;
+}
+
+.header .overly .plan2 {
+    font-size: 24px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    float: left;
+}
+
+@media(max-width: 767px) {
+    .container{
+       width: 540px; 
+    }
+    .visible-lg{
+        display: block;
+    }
+
+    .hidden-xs{
+display: none;
+    }
+
+    .header .overly .plan1 {
+        float: none;
+        margin: 90px auto 5px;
+    }
+
+    .header .overly .plan2 {
+        float: none;
+        margin: 15px auto 0;
+    }
+
+    .header .overly h1 {
+        font-size: 45px;
+    }
+
+
+}
+
+@media(min-width: 768px){
+    .container {
+        width: 720;
+    }
+    .header .overly h1{
+        color: aquamarine;
+    }
+    .hidden-sm{
+        display: none;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        width: 960;
+    }
+    
+}
+
+@media(min-width: 1200px) {
+    .container {
+        width: 1140;
+    }
+}
